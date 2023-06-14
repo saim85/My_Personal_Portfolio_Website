@@ -1,0 +1,25 @@
+
+@media screen and (max-width:991px) {
+    .sidebar{
+        display: none;    
+    }
+    .main{
+        margin-left: 0;
+    }
+    .features .features-cards{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .features .features-cards .card{
+        flex-basis: 30rem;
+    }
+}
+@media screen and (max-width:576px) {
+    .features .features-cards .card{
+        flex-basis: 100%;
+    }
+}

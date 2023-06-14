@@ -6,20 +6,28 @@
 }
 html{
     scroll-behavior: smooth;
-    font-size: 14px
+    font-size: 14px;
+    overflow-x: hidden;
 }
 body{
     font-family: 'DM Sans', sans-serif;
+    padding: 1rem;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
 }
 /* Sidebar Styling Goes Here */
 .sidebar{
+
     width: 280px;
     height: auto;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* position:fixed; */
+    position:fixed;
     top: 0;
     left: 0;
     overflow-y:scroll;
@@ -93,3 +101,176 @@ body{
     font-size: 1.3rem;
 }
 /* Sidebar Styling Ends */
+
+.main{
+    max-width: 950px;
+    width: 100%;
+    height: 60%;
+    margin-left: 280px;
+    padding: 1rem;
+}
+.home{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home-container .image{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    animation: changeBorder 5s linear 4s infinite;
+    transition: all 1s ease-in-out;
+}
+.home-container .image img{
+    width: 100%;
+    height: 100%;
+}
+.home-container h2{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.home-container h2 span{
+    text-transform: uppercase;
+}
+.home-container p{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #bf3a30;
+}
+.home-container a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#212529;
+    margin-right: 8px;
+    padding: 14px 20px;
+    line-height: 21px;
+    border-radius: 6px;
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    transition: all 0.6s ease-in-out
+}
+.home-container a:hover{
+    transform: translateY(-6px);
+    background-color: #bf3a30;
+    background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+    color: #fff;
+}
+@keyframes changeBorder {
+    0%{
+        border:6px solid #864ba2;
+    }
+    25%{
+        border:6px solid grey;
+    }
+    50%{
+        border:6px solid #bf3a30;
+    }
+    75%{
+        border:6px solid aqua;
+    }
+    100%{
+        border:6px solid green;
+    }
+}
+
+
+/* Features Styling Start */
+.features{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 3rem;
+}
+.features .features-container{
+    padding: 1rem;
+}
+.features-container .title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.features-container .title p{
+    font-size: 1.3rem;
+    color: #ff014f;
+    margin-bottom: 0.7rem;
+}
+.features-container .title h2{
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: #212529;
+    font-weight: bold;
+}
+.features-container .features-cards{
+    display: flex;
+    /* gap: 1rem; */
+    justify-content:space-between;
+}
+.features-cards .card{
+    flex-basis: 20rem;
+    padding: 4rem 1.5rem;
+    border-radius: 6px;
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    transition: all 0.23s ease-in-out;
+}
+.features-cards .card :first-child{
+    font-size: 2rem;
+    color: #ff014f;
+    margin-bottom: 2rem;
+}
+.features-cards .card h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #212529;
+    font-weight: bold;
+}
+.features-cards .card p{
+    font-size: 1.3rem;
+text-align:justify;
+margin-bottom: 2rem;
+
+}
+.features-cards .card :last-child{
+    font-size: 2rem;
+    color: #212528;
+    display: none;
+}
+.features-cards .card:hover{
+    transform: translateY(-16px);
+    background-color: #bf3a30;
+    background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+    color: #fff;
+}
+.features-cards .card:hover h3{
+    color: #fff !important;
+}
+.features-cards .card:hover :first-child{
+    color: #fff !important;
+}
+.features-cards .card:hover :last-child{
+    display: block;
+    color: #fff !important;
+}
+
+
+/* Features Styling Ends */
+
+
+
+
+
+
+
+
+
+
+
