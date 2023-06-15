@@ -264,6 +264,166 @@ margin-bottom: 2rem;
 
 /* Features Styling Ends */
 
+/* Resume Styling Start */
+.resume{
+    width: 100%;
+    min-height: 100vh;
+   padding-top: 3rem;
+}
+
+.resume .title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.resume .title p{
+    font-size: 1.3rem;
+    color: #ff014f;
+    margin-bottom: 0.7rem;
+}
+.resume .title h2{
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    color: #212529;
+    font-weight: bold;
+}    .resume .tabs{
+    display: flex;
+    list-style: none;
+    background:#fff;
+    box-shadow: 0px 0px 1px grey;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    justify-content:space-between;
+    margin-bottom: 3rem;
+    
+}
+.resume .tabs .tab{
+    border-radius: 6px;
+    flex-basis:250px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #212528;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+.resume .tabs .tab.active{
+    box-shadow: 0px 0px 6px grey;
+    color: #ff014f;
+}
+.resume .main-content .Education-content{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.resume .main-content .Education-content .left-con,.right-con{
+    flex-basis: 31rem;
+    /* border: 1px solid yellow; */
+   /* padding: 10px; */
+}
+.resume .main-content .left-con .title-con{
+    margin-bottom: 4rem;
+    border-radius: 12px;
+}
+.resume .main-content .left-con .title-con p{
+    color: #ff014f;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    
+}
+.resume .main-content .left-con .title-con h3{
+    color: #212528;
+    font-size: 1.8rem;
+    font-weight: bold;
+    
+}
+.resume .main-content .right-con .title-con{
+    margin-bottom: 4rem;
+    border-radius: 12px;
+}
+.resume .main-content .right-con .title-con p{
+    color: #ff014f;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    
+}
+.resume .main-content .right-con .title-con h3{
+    color: #212528;
+    font-size: 1.8rem;
+    font-weight: bold;
+    
+}
+.resume .main-content .cards{
+    border-left: 3px solid #ddd;
+    display: flex;
+    flex-direction: column;
+
+}
+.resume .main-content .cards .card{
+    flex-basis: 70%;
+    margin-left:2rem;
+    padding: 2rem;
+    background: #ffff;
+    box-shadow: 0px 0px 2px grey;
+    border-radius: 6px;
+    position: relative;
+    margin-bottom: 2rem;
+} 
+.resume .main-content .card::before{
+    content: '';
+    display: block;
+    /* background: #000; */
+    border: 3px solid rgb(216, 191, 191);
+    background: #ff014f;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -2.8rem;
+
+}
+.resume .main-content .card::after{
+    content: '';
+    display: block;
+    /* background: #000; */
+    background: rgb(216, 191, 191);
+    width: 2rem;
+    height: 4px;
+    
+    position: absolute;
+    /* left: -1.5rem; */
+    top: 2.7rem;
+    z-index: -1;
+    left: -22px;
+
+}
+.resume .main-content .card .degree-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid grey;
+}
+.resume .main-content .card .degree-title h4{
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+.resume .main-content .card .degree-title p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.resume .main-content .card .right{
+    background: #ff014f;
+    padding: 5px;
+    color: #fff;
+    border-radius: 3px;
+
+}
+.resume .main-content .card .descr{
+    font-size: 1.3rem;
+}
+/* Resume Styling End */
+
 
 
 

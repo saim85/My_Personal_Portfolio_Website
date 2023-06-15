@@ -1,4 +1,12 @@
-
+@media screen and (max-width:1200px) {
+    .resume .tabs{
+        /* justify-content: center !important; */
+        flex-wrap: wrap;
+    }
+    .resume .tabs .tab{
+        flex-basis: 400px !important;
+    }
+}
 @media screen and (max-width:991px) {
     .sidebar{
         display: none;    
@@ -16,6 +24,9 @@
 @media screen and (max-width:768px) {
     .features .features-cards .card{
         flex-basis: 30rem;
+    }
+    .resume .tabs .tab{
+        flex-basis: 100%;
     }
 }
 @media screen and (max-width:576px) {
