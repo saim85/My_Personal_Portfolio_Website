@@ -19,7 +19,28 @@
         justify-content: center;
         gap: 3rem;
     }
+    .contact-container .right .form{
+        flex-basis: 100%;
+     
+    }
+    .right .form .lable1 input{
+            text-align: center;
+    }
     
+    
+}
+@media screen and (max-width:800px) {
+    .contact-container .left{
+        display: flex;
+        flex-basis: 100%;
+        gap:1rem;
+        margin-bottom: 1rem;
+        /* width:100%; */
+    }
+    .contact-container .left .image{
+        flex-basis: 30rem;
+        /* border:1px solid red; */
+    }
 }
 @media screen and (max-width:768px) {
     .features .features-cards .card{

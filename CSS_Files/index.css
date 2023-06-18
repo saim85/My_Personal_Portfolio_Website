@@ -310,13 +310,17 @@ margin-bottom: 2rem;
     box-shadow: 0px 0px 6px grey;
     color: #ff014f;
 }
-.resume .main-content .Education-content{
-    padding: 10px;
+.resume .main-content .box{
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    display: none;
 }
-.resume .main-content .Education-content .left-con,.right-con{
+.resume .main-content .box.active{
+    display: flex;
+}
+.resume .main-content .box .left-con,.right-con{
     flex-basis: 31rem;
     /* border: 1px solid yellow; */
    /* padding: 10px; */
@@ -422,7 +426,183 @@ margin-bottom: 2rem;
 .resume .main-content .card .descr{
     font-size: 1.3rem;
 }
+.resume  .skills-con{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skills-con .left{
+    flex-basis: 32rem;
+    /* border: 1px solid red; */
+    padding: 1rem;
+}
+.skills-con .left .title-con p{
+    color: #ff014f;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.skills-con .left .title-con h4{
+    color: #212528;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.skills-con .left .skills .skill{
+    border: 1px solid #212528;
+    padding: 3px 0;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}.skills-con .left .skills .skill .progress{
+    background: #ff014f;
+    padding: 5px;
+    position: absolute;
+    top: 0;   
+}
+.skills-con .left .skills .one{
+    margin-bottom: 1.5rem;
+}
+.skills-con .left .skills .text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
 /* Resume Styling End */
+
+/* Contact Us Goes Here */
+.contact{
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 1rem;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-container .left{
+    flex-basis: 20rem;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0px 0px 3px grey;
+}
+.contact-container .left .image{
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+.contact-container .left .image img{
+    width: 100%;
+    height:100%;
+}
+.contact-container .left .text h2{
+    font-size: 2.5rem;
+    color: #212528;
+    margin-bottom: 4px;
+
+}
+.contact-container .left .text .job{
+    color: #777;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+.contact-container .left .text .descr{
+    font-size: 1.5rem;
+    color: #212528;
+    margin-bottom: 20px;
+} 
+.contact-container .left .text p{
+    margin-bottom: 10px;
+    color: #212528;
+    font-size: 1.1rem;
+}
+.contact-container .left .text p a{
+    text-decoration: none;
+    color:#212528;
+}
+
+.contact-container .right{
+    flex-basis: 40rem;
+    /* border: 1px solid green; */
+    box-shadow: 0px 0px 3px grey;
+    flex-wrap: wrap;
+}
+.contact-container .right .form{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    flex-wrap: wrap;
+}
+.right .form .lable1{
+    flex-basis: 18rem;
+     display: flex;
+     flex-direction: column;
+     margin-bottom:1rem;
+}
+.right .form .lable1 input{
+    padding:1rem 1rem;
+   
+}
+.right .form .lable2{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+.right .form .lable2 input{
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+}
+.right .form .lable3{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.right .form .lable3 .textarea-con{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 565px !important;
+}
+.right .form .lable3 textarea{
+    flex-basis: 100%;
+    padding: 0 2rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.right .form .butns {
+     display: flex;
+     /* flex-basis: 30rem; */
+}
+.right .form .butns button input{
+    flex-basis:100%;
+    border:none;
+    outline: none;
+    padding:1.5rem 16rem;
+}
+.right .butns input {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#212529;
+    margin-right: 8px;
+    padding: 14px 20px;
+    line-height: 21px;
+    border-radius: 6px;
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    transition: all 0.6s ease-in-out
+}
+.right .butns input:hover{
+    transform: translateY(-6px);
+    background-color: #bf3a30;
+    background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+    color: #fff;
+}
+/* Contact Us Ends */
 
 
 
